@@ -1,53 +1,125 @@
-# GCP Learning Repository
+![nuxt-ui-docs-social-card](https://github.com/nuxt-ui-pro/docs/assets/739984/f64e13d9-9ae0-4e03-bf7f-6be4c36cd9ba)
 
-Welcome to the GCP Learning repository by GDG Cloud Lahore! This repository is a collaborative space for learning Google Cloud Platform (GCP) technologies. Whether you're a beginner or an experienced user, your contributions are valuable.
+# Nuxt UI Pro - Docs template
 
-## How to Contribute
+[![Nuxt UI Pro](https://img.shields.io/badge/Made%20with-Nuxt%20UI%20Pro-00DC82?logo=nuxt.js&labelColor=020420)](https://ui.nuxt.com/pro)
+[![Nuxt Studio](https://img.shields.io/badge/Open%20in%20Nuxt%20Studio-18181B?&logo=nuxt.js&logoColor=3BB5EC)](https://nuxt.studio/themes/docs)
 
-Follow these simple steps to contribute:
+- [Live demo](https://docs-template.nuxt.dev/)
+- [Play on Stackblitz](https://stackblitz.com/github/nuxt-ui-pro/docs)
+- [Documentation](https://ui.nuxt.com/pro/getting-started)
+- [Clone on Nuxt Studio](https://nuxt.studio/themes/docs)
 
-1. **Fork the Repository:**
-   Click on the "Fork" button at the top right corner of this page to create a copy of the repository in your GitHub account.
+## Quick Start
 
-2. **Clone Your Fork:**
-   Clone the forked repository to your local machine using the following command:
-   ```bash
-   git clone https://github.com/YourUsername/GCP-Learning.git
-   ```
+```bash [Terminal]
+npx nuxi init -t github:nuxt-ui-pro/docs
+```
 
-3. **Create a New Branch:**
-   Create a new branch for your contribution. Choose a meaningful branch name related to your work.
-   ```bash
-   git checkout -b feature/your-feature
-   ```
+## Setup
 
-4. **Make Changes:**
-   Make your contributions, whether it's adding documentation, code, or any other improvements.
+Make sure to install the dependencies:
 
-5. **Commit Your Changes:**
-   Commit your changes to the local branch:
-   ```bash
-   git add .
-   git commit -m "Your descriptive commit message"
-   ```
+```bash
+# npm
+npm install
 
-6. **Push to Your Fork:**
-   Push your changes to your GitHub fork:
-   ```bash
-   git push origin feature/your-feature
-   ```
+# pnpm
+pnpm install
 
-7. **Create a Pull Request:**
-   Go to your GitHub fork, and you should see a prompt to create a pull request for the branch you just pushed. Click on "Compare & pull request" and fill in the details.
+# yarn
+yarn install
 
-8. **Wait for Review:**
-   Your contribution will be reviewed by the repository maintainers. Be open to feedback and make necessary adjustments if required.
+# bun
+bun install
+```
 
-9. **Celebrate Your Contribution:**
-   Once your pull request is merged, celebrate your contribution to the GCP Learning community!
+## Development Server
 
-## Code of Conduct
+Start the development server on `http://localhost:3000`:
 
-Please make sure to follow our [Code of Conduct](CODE_OF_CONDUCT.md) in all your interactions with the community.
+```bash
+# npm
+npm run dev
 
-Happy Learning!
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Nuxt Studio integration
+
+Add `@nuxthq/studio` dependency to your package.json:
+
+```bash
+# npm
+npm install --save-dev @nuxthq/studio
+
+# pnpm
+pnpm add -D @nuxthq/studio
+
+# yarn
+yarn add -D @nuxthq/studio
+
+# bun
+bun add -d @nuxthq/studio
+```
+
+Add this module to your `nuxt.config.ts`:
+
+```ts
+export default defineNuxtConfig({
+  ...
+  modules: [
+    ...
+    '@nuxthq/studio'
+  ]
+})
+```
+
+Read more on [Nuxt Studio docs](https://nuxt.studio/docs/projects/setup).
+
+## Renovate integration
+
+Install [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) on your repository and you are good to go.
